@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="login-page" class="login-block valign-wrapper">
+    <div style="width: 100%;">
+        <div class="logo-block">
+            <p><b class="logo">Bank</b> Sopport Portal</p>
+        </div>
+        <div class="card-panel login-form container">
+          <form name="loginForm">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <label for="username" class="center-align">E-mail</label>
+                <input id="username" type="email" name="username" class="validate" required>
+                <span class="helper-text" data-error="Invalid Username" data-success=""></span>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">https</i>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" class="validate" minlength="6" required>
+                <span class="helper-text" data-error="This field is required (min length = 6)" data-success=""></span> 
+            </div>
+            <div class="input-field col s12">
+              <button type="submit" href="index.html" class="btn waves-effect waves-light col">Login</button>
+            </div>
+            <div>
+              <p>Forgot your password? <a href="#" style="color: #3ea69b;">Reset it here.</a></p>
+            </div>
+          </form>
+        </div>
+    </div>      
+</div>
+
+<router-outlet></router-outlet>
